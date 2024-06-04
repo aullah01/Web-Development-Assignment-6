@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Details</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        ul.steps {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        ul.steps li {
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        ul.steps li.current {
+            background-color: #16be5c;
+            color: #fff;
+        }
+        ul.steps li.second {
+            background-color: #2421ce;
+            color: #fff;
+        }
+
+        fieldset {
+            width: 500px;
+            height: 320px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+        .cnic-input {
+            width: 10px;
+            height: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="steps">
+        <li class="current">Step 1: Account</li>
+        <li class="second">Step 2: Personal Details</li>
+        <li>Step 3: Your Review</li>
+    </ul>
+
+    <fieldset>
+        <legend>Account</legend><br><br>
+        <label for="name">First Name: <br>
+            <input type="text" id="name" name="name" placeholder="Enter First Name" size="41">
+        </label><br><br>
+        <label for="name">Last Name: <br>
+            <input type="text" id="name" name="name" placeholder="Enter Last Name" size="41">
+        </label><br><br>
+        <label for="cnic">CNIC: <br>
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1"> -
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1">
+            <input type="text" class="cnic-input" maxlength="1"> -
+            <input type="text" class="cnic-input" maxlength="1">
+        </label><br><br>
+        <label for="social-link">Social Link: <br>
+            <input type="text" id="social-link" name="social-link" placeholder="Enter Facebook/LinkedIn Profile Here" size="41">
+        </label>
+        <br><br>
+        <a href="account.html"><img src="back.png" alt="Back" width="100" height="30"></a>
+        <a href="review.html"><img src="next.jpeg" alt="Next" width="100" height="30"></a>
+    </fieldset>
+</body>
+</html>
